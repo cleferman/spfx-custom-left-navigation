@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-custom-navigation-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/spFxCustomNavigation/SpFxCustomNavigationApplicationCustomizer.js",
+          "manifest": "./src/extensions/spFxCustomNavigation/SpFxCustomNavigationApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxCustomNavigationApplicationCustomizerStrings": "lib/extensions/spFxCustomNavigation/loc/{locale}.js"
+  }
+}

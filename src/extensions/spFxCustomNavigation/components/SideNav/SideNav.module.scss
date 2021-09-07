@@ -1,0 +1,51 @@
+:global {
+    #spPageChromeAppDiv.in-teams {
+        .mainContent {
+            margin-left: 242px; //we're moving the page container to the right
+        } //so we make space for the left nav
+    }
+}
+
+.spfxFluentuiNav {
+    //this is where we position the left nav from the TopPlaceholder to the left
+    width: 242px;
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+     :global {
+        .ms-FocusZone {
+            height: 100%;
+        }
+        .ms-Nav-groupContent {
+            ul {
+                margin-top: 0
+            }
+        }
+        .ms-Nav-linkButton {
+            border: 0;
+        }
+    }
+    nav {
+        height: calc(100% - 50px);
+    }
+}
+
+//just some css to style the ugly scrollbar so it looks better in teams
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+    "port": 4321,
+    "https": true,
+    "serveConfigurations": {
+        "default": {
+            "pageUrl": "https://<your-tenant>.sharepoint.com/sites/TestVivaConnection?env=Embedded",
+            "customActions": {
+                "486088fe-eea4-4146-abca-e59080140d53": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {}
+                }
+            }
+        },
+        "spFxCustomNavigation": {
+            "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+            "customActions": {
+                "486088fe-eea4-4146-abca-e59080140d53": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {}
+                }
+            }
+        }
+    }
+}
